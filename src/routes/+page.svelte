@@ -1,5 +1,5 @@
 <script>
-	import Counter from '$lib/Counter.svelte';
+	// import Counter from '$lib/Counter.svelte';
 </script>
 
 <svelte:head>
@@ -11,12 +11,11 @@
 		<span class="welcome">
 			<picture>
 				<source srcset="favicon.png" type="image/webp" />
-				<img src="favicon.png" alt="Birdland Logo" />
+				<a href="https://www.instagram.com/birdlandgame?igsh=NTc4MTIwNjQ2YQ%3D%3D">
+					<img src="favicon.png" alt="Birdland Logo" />
+				</a>
 			</picture>
 		</span>
-
-
-
 <!--	<Counter />-->
 </section>
 
@@ -29,7 +28,7 @@
 		align-items: center;
 		flex: 1;
 		height: 100vh;
-		background-image: url('TempSplashArt.jpg');
+		background-image: url('static/TempSplashArt.jpg');
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
