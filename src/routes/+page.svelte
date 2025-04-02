@@ -4,27 +4,22 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="Birdland Game" content="A game where you are a lizard and you go to an island of birds." />
 </svelte:head>
 
 <section>
-	<h1>
 		<span class="welcome">
 			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
+				<source srcset="favicon.png" type="image/webp" />
+				<img src="favicon.png" alt="Birdland Logo" />
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
-	</h1>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
 
-	<Counter />
+<!--	<Counter />-->
 </section>
+
 
 <style>
 	section {
@@ -33,6 +28,11 @@
 		justify-content: center;
 		align-items: center;
 		flex: 1;
+		height: 100vh;
+		background-image: url('TempSplashArt.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	h1 {
@@ -40,18 +40,16 @@
 	}
 
 	.welcome {
-		display: block;
-		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		height: auto;
+		padding: 0;
 	}
 
 	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+		max-width: 100%;
+		height: auto;
 	}
 </style>
